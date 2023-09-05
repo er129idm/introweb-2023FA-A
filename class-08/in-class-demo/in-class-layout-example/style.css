@@ -1,0 +1,112 @@
+body, html {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 25pt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.navWrapper {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  padding: 32px;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 50vw;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+a, a:visited {
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-color: #333;
+  background-image: url('https://loremflickr.com/1920/1080/harry+styles');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: #fff;
+  font-size: 16vmin;
+}
+
+.insetContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+.threeColumnContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.imageBlock {
+  width: 100%;
+  font-size: 24pt;
+}
+
+.imageBlock img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.imageBlock p {
+/*    margin-top: 0.5em;*/
+  font-size: 2rem;
+}
+
+.twoColumnContainer {
+  display: flex;
+  gap: 32px;
+}
+
+.twoColumnContainer p {
+  font-size: 1.75vw;
+/*  width: 100%;*/
+/*  flex-basis: 100%;*/
+/*  font-size: clamp(1em, 1.75vw, 4em); */
+/*  flex: 1;*/
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 4px;
+}

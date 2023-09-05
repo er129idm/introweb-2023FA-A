@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.contentParent {
+  width: 500px;
+  height: 500px;
+  background-color: #ff0072;
+}
+
+.contentChild {
+  width: 100%;
+  background-color: #dadb0d;
+  padding: 20px;
+  border: 10px solid black;
+}

@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ff0072;
+}
+
+.flexParent {
+  display: flex;
+}
+
+.flexParent div {
+  background-color: #ccc;
+  margin: 16px;
+  padding: 16px;
+  border: 4px solid;
+}
+
+.flexParent > div {
+  background-color: #dadb0d;
+}
+
+.flexParent div > p {
+   text-decoration: underline; 
+}
+
+.flexParent div p:first-child {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+p + p {
+  margin-top: 64px;
+}
+
+h1 + p {
+
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: #ff0072;
+}
+
+a:hover {
+  text-decoration: underline;
+}

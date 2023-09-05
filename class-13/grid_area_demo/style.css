@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  box-sizing: border-box;
+  background: #fff;
+  font-family: sans-serif;
+  font-size: 1.2em;
+  width: 100vw;
+}
+
+* {
+  /* background-color: rgba(0,0,0,0.1); */
+  /* -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.53);
+box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.53); */
+}
+
+.mainContainerGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 2vw;
+
+  /* Nav on left side */
+  grid-template-areas:
+    "hero hero hero hero hero hero hero hero"
+    "nav  nav  main main main main main main";
+
+  /* Nav on right side */
+  /* grid-template-areas:
+    "hero hero hero hero hero hero hero hero"
+    "main main main main main main nav  nav"; */
+
+  /* With spacing */
+    /* grid-template-areas:
+      "hero hero hero hero hero hero hero hero"
+      ".    main main main main main  nav  .   "
+      ".    main main main main main  nav  .   "; */
+
+
+  /* Nav on top */
+  /* grid-template-areas:
+    "nav nav nav nav nav nav nav nav"
+    "hero hero hero hero hero hero hero hero"
+    "main main main main main main main main"
+    "main main main main main main main main"; */
+
+
+}
+
+.menuSection {
+  grid-area: nav;
+  margin: 0;
+  padding: 0;
+  color: #ff0072;
+  background-color: #000;
+  padding: 2vw;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.menuSection li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  grid-area: hero;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 4em;
+  background-color: #ff0072;
+  height: 50vh;
+  box-shadow: 0px 0px 4vw 0px rgba(0,0,0,0.53);
+}
+
+.bodySection {
+  grid-area: main;
+  padding: 0px 3vw 2vw 2vw;
+}
+
+.headline {
+  margin: 4vw 0 4vw 0;
+  background-color: #000;
+  color: #fff;
+  padding: 2vw;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 1.2vw;
+  grid-row-gap: 4vw;
+  align-items: start;
+}
+
+.articlePreview {
+  grid-column-end: span 6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 1.2vw;
+}
+
+.articleThumb {
+  grid-column: span 2;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.previewCopy {
+  grid-column-end: span 4;
+}
+
+.previewCopy > h4 {
+  margin-top: 0;
+}
+.articlePreview > p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  padding: 2vw;
+  grid-area: footer;
+  background-color: #ff0072;
+  color: #000;
+  text-align: right;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .mainContainerGrid{
+    grid-template-areas:
+      "nav nav nav nav nav nav nav nav"
+      "hero hero hero hero hero hero hero hero"
+      "main main main main main main main main"
+      "main main main main main main main main";
+  }
+}
